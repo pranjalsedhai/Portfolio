@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2506044_PranjalSedhai_weatherApp</title>
+    <!-- Linking css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Linking font awesome library-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <!-- Total body of the webpage -->
+  <body>
+    <!-- Contains the darkish background color  -->
+    <div id="color-container">
+      <!-- Container within the color container div where there is actual content -->
+      <div id="container">
+          <!-- This is the header part that holds the location name and search bar -->
+          <header>
+            <!-- Contains weather icon and Website name -->
+            <div class="icon-website-head">
+              <i class="fa-solid fa-cloud"></i>
+              <div id="website-heading">Weather Website</div>
+            </div>
+
+            <!-- Contains location icon and location name -->
+            <div class="icon-text">
+              <i id="location-sign" class="fa-solid fa-location-dot"></i>
+              <div id="location-name">Gadsden</div>
+            </div>
+
+            <!-- This is a form which is used to take input from the user even when they press enter -->
+            <form id="userForm">
+              <!-- This div is whole search area -->
+              <div id="search">
+                <!-- Taking user input -->
+                <input
+                  type="text"
+                  id="search-box"
+                  placeholder="Search Location"
+                />
+                <!-- Submit button -->
+                <button id="searchButton">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </form>
+          </header>
+
+          <!-- Main weather information -->
+          <div id="weather-info">
+            <div id="weather-heading">Current Weather</div>
+            <!-- Weather icon and main weather condition-->
+            <div id="weather-icon-main">
+              <div>
+                <img id="weather-icon" alt="Weather Icon" />
+              </div>
+              <div id="weather-main"></div>
+            </div>
+
+            <!-- Temperature and day -->
+            <div id="temp-day">
+              <div id="temperature"></div>
+              <div id="day"></div>
+            </div>
+            <!-- Weather description and date -->
+            <div id="description-date">
+              <div id="weather-description"></div>
+              <div id="date"></div>
+            </div>
+            <!-- City name -->
+            <div id="city"></div>
+            <!-- Detail description in sentence -->
+            <div id="detail-description"></div>
+          </div>
+          <!-- Pressure, humidity, wind speed and wind direction information -->
+          <div id="other-weather-info">
+            <!-- Pressure information -->
+            <div class="other-weather-info-border">
+              <label class="other-weather-info-heading">Pressure</label>
+              <i class="fa-solid fa-gauge"></i>
+              <div id="pressure"></div>
+            </div>
+            <!-- Humidity information -->
+            <div class="other-weather-info-border">
+              <label class="other-weather-info-heading">Humidity</label
+              ><i class="fa-solid fa-droplet"></i>
+              <div id="humidity"></div>
+            </div>
+            <!-- Wind speed information -->
+            <div class="other-weather-info-border">
+              <label class="other-weather-info-heading"> Wind Speed</label>
+              <i class="fa-solid fa-wind"></i>
+              <div id="wind-speed"></div>
+            </div>
+            <!-- Wind direction information -->
+            <div class="other-weather-info-border">
+              <label class="other-weather-info-heading"> Wind Direction</label
+              ><i class="fa-solid fa-arrow-right"></i>
+              <div id="wind-direction"></div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- Footer section of the webpage -->
+    <footer>Copyright &copy Pranjal Sedhai 2024.</footer>
+    <!-- Linking JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
